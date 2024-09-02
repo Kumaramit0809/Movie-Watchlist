@@ -1,0 +1,171 @@
+
+.movie-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  min-height: 100vh; 
+  text-align: center; 
+  padding: 20px;
+  
+}
+
+.search-form {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center; 
+  width: 100%;
+  max-width: 600px; 
+  margin-bottom: 20px; 
+}
+
+.search-form input {
+  flex: 1; 
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 25px; 
+  font-size: 1rem; 
+  outline: none; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: border-color 0.3s; 
+}
+
+.search-form input:focus {
+  border-color: #3498db;
+}
+
+.search-form button {
+  background-color: #3498db; 
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; 
+  margin-left: 10px; 
+}
+
+.search-form button:hover {
+  background-color: #2980b9; 
+  transform: scale(1.05);
+}
+
+.movie-list {
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+  gap: 20px; 
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto; 
+  
+}
+
+.movie-list div {
+  background: #ffffff; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  overflow: hidden; 
+  text-align: center; 
+  transition: transform 0.3s;
+  
+}
+
+.movie-list div:hover {
+  transform: scale(1.05); 
+}
+
+.movie-list img {
+  width: 100%; 
+  height: auto; 
+  border-bottom: 1px solid #ddd; 
+}
+
+.movie-list h3 {
+  font-size: 1.1rem; 
+  color: #333; 
+  margin: 10px 0; 
+}
+.title{
+  text-decoration: none;
+}
+
+.welcome {
+  font-size: 3rem;
+  color: #333; 
+  margin-bottom: 10px; 
+}
+
+.millions {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 20px; 
+}
+
+.watchlist-empty {
+  text-align: center;
+  font-size: 2rem;
+}
+
+
+
+@media (max-width: 768px) {
+  .movie-list {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+  }
+
+  .search-form {
+    flex-direction: column; 
+    max-width: 100%; 
+  }
+
+  .search-form button {
+    margin-left: 0; 
+    margin-top: 10px; 
+  }
+
+  .welcome {
+    font-size: 2.5rem; 
+  }
+
+  .millions {
+    font-size: 1.2rem; 
+  }
+  .search-form input{
+    width: 100%;
+  }
+  .search-form button{
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-list {
+    grid-template-columns: 1fr; 
+  }
+
+  .search-form input,
+  .search-form button {
+    font-size: 0.9rem; 
+    padding: 10px; 
+  }
+  .search-form input{
+    width: 100%;
+  }
+  .search-form button{
+    width: 50%;
+  }
+
+  .welcome {
+    font-size: 2rem; 
+  }
+
+  .millions {
+    font-size: 1rem; 
+  }
+
+  .movie-list h3 {
+    font-size: 1rem; 
+  }
+}

@@ -1,0 +1,146 @@
+
+
+.watchlist-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  min-height: 100vh; 
+  padding: 20px;
+  background: #000;
+  color: white; 
+  text-align: center; 
+ 
+}
+
+.watchlist-header h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white; 
+}
+
+.watchlist-empty {
+  font-size: 1.2rem;
+  color: white; 
+  margin-bottom: 20px; 
+}
+
+.gif-img {
+  margin: 0 auto; 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  background: #fff; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 15px;
+  margin: 10px; 
+  max-width: 400px; 
+  text-align: center; 
+  transition: transform 0.3s;
+  margin-top: 8%
+}
+
+.container:hover {
+  transform: scale(1.05); 
+  ;
+}
+
+.container img {
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+}
+
+.title {
+  font-size: 1.2rem;
+  color: #333; 
+  margin: 10px 0; 
+}
+
+.year {
+  font-size: 1rem;
+  color: #666; 
+}
+
+.summary {
+  font-size: 0.9rem;
+  color: #555; 
+  margin-bottom: 10px; 
+}
+
+.remove-btn {
+  background-color: #e74c3c; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s; 
+}
+
+.remove-btn:hover {
+  background-color: #c0392b; 
+}
+
+
+@media (max-width: 768px) {
+  .watchlist-header h1 {
+    font-size: 1.5rem; 
+  }
+
+  .watchlist-empty {
+    font-size: 1rem;
+  }
+
+  .container {
+    max-width: 90%; 
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 1rem; 
+  }
+
+  .summary {
+    font-size: 0.8rem; 
+  }
+
+  .remove-btn {
+    padding: 6px 10px; 
+    font-size: 0.9rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .watchlist-header h1 {
+    font-size: 1.2rem; 
+  }
+
+  .container {
+    max-width: 95%; 
+    padding: 8px;
+  }
+
+  .title {
+    font-size: 0.9rem; 
+  }
+
+  .year {
+    font-size: 0.9rem; 
+  }
+
+  .summary {
+    font-size: 0.7rem; 
+  }
+
+  .remove-btn {
+    padding: 5px 8px; 
+    font-size: 0.8rem; 
+  }
+}

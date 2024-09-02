@@ -1,0 +1,106 @@
+
+.movie-detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background: black; 
+  min-height: 100vh;
+}
+
+.movie-detail {
+  background: #ffffff; 
+  border-radius: 10px; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; 
+}
+
+.movie-detail img {
+  width: 100%; 
+  max-width: 300px; 
+  height: auto; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 20px; 
+}
+
+.movie-detail h1 {
+  font-size: 2rem; 
+  color: #333; 
+  margin: 0;
+  font-family: 'Arial', sans-serif; 
+}
+
+.movie-detail p {
+  font-size: 1rem; 
+  color: #666; 
+  line-height: 1.5; 
+  margin: 15px 0; 
+}
+
+.add-to-watchlist-btn {
+  background-color: #3498db; 
+  color: white; 
+  border: none;
+  border-radius: 25px; 
+  padding: 10px 20px; 
+  font-size: 1rem; 
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; 
+  text-transform: uppercase;
+  font-weight: bold; 
+}
+
+.add-to-watchlist-btn:hover {
+  background-color: #2980b9; 
+  transform: scale(1.05); 
+}
+
+@media (max-width: 768px) {
+  .movie-detail {
+    padding: 15px; 
+  }
+
+  .movie-detail h1 {
+    font-size: 1.5rem; 
+  }
+
+  .movie-detail p {
+    font-size: 0.9rem; 
+  }
+
+  .add-to-watchlist-btn {
+    font-size: 0.9rem; 
+    padding: 8px 16px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-detail-container {
+    padding: 20px;
+  }
+
+  .movie-detail img {
+    max-width: 250px; 
+  }
+
+  .movie-detail h1 {
+    font-size: 1.2rem; 
+  }
+
+  .movie-detail p {
+    font-size: 0.8rem;
+    line-height: 1.4; 
+  }
+
+  .add-to-watchlist-btn {
+    font-size: 0.8rem; 
+    padding: 6px 12px; 
+  }
+}
